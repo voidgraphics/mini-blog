@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 error_reporting(E_ALL); # Activer le reportage des erreurs
 ini_set('display_errors', 1); # Afficher les erreurs dans le navigateur
 //Définition de l’include_path, à adapter selon votre configuration
