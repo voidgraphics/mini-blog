@@ -6,7 +6,7 @@ class M_Users extends Model
     {
         $sql = 'SELECT $ FROM users WHERE username=:username AND password=:password;';
         $pdost = $this->connexion->prepare($sql);
-        $pdost->execute([':username'=>$username, ':password'=>$password]);
+        $pdost->execute([':username' => $username, ':password' => $password]);
         return $pdost->fetch();
     }
 
